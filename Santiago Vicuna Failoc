@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página personal de Nayely MN</title>
+  <style>
+    :root{ --azul:#0e66d1; --card:#ffffff; --texto:#0b1a2b }
+    html,body{
+      height:100%; margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--azul); color:var(--texto);
+    }
+    .wrap{ max-width:900px; margin:40px auto; padding:24px; }
+    .card{ background:var(--card); border-radius:14px; padding:32px; box-shadow:0 8px 24px rgba(2,6,23,0.12); }
+    header{ display:flex; gap:20px; align-items:center; }
+    .avatar{
+      width:96px; height:96px; border-radius:12px;
+      background:linear-gradient(135deg, rgba(14,102,209,0.12), rgba(14,102,209,0.06));
+      display:flex; align-items:center; justify-content:center;
+      font-size:28px; color:var(--azul); font-weight:600;
+    }
+    h1{ margin:0; font-size:30px; }
+    p.lead{ margin:8px 0 0 0; color:#253544; font-size:17px; }
+    section{ margin-top:28px; }
+    table{ width:100%; border-collapse:collapse; margin-top:8px; }
+    th,td{ text-align:left; padding:10px 8px; border-bottom:1px solid #eef3fb; }
+    th{ color:#284055; font-weight:600; }
+    a.link{ color:var(--azul); text-decoration:none; }
+    .muted{ color:#6b7b8c; font-size:14px }
+    .note{ font-size:13px; color:#6b7b8c; margin-top:14px }
+    .placeholder{ background:#f6fbff; padding:6px 8px; border-radius:6px; display:inline-block }
+    [contenteditable]{ outline:2px dashed rgba(14,102,209,0.15); padding:2px 4px; border-radius:4px }
+    @media (max-width:640px){ .wrap{ margin:16px } header{ flex-direction:column; align-items:flex-start } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <div class="avatar">NM</div>
+        <div>
+          <h1>Nayely MN</h1>
+          <p class="lead" contenteditable="true">
+            Escribe aquí una breve presentación sobre ti: tus intereses, tu carrera o área de especialización,
+            y lo que te motiva profesionalmente.
+          </p>
+          <p class="muted">Contacto: <span contenteditable="true" class="placeholder">tu.email@example.com</span> · Perú</p>
+        </div>
+      </header>
+
+      <section>
+        <h2>Cursos</h2>
+        <p class="note">Agrega tus cursos, profesores y los enlaces a sus perfiles de LinkedIn.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Curso</th>
+              <th>Profesor(a)</th>
+              <th>LinkedIn</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Ejemplo de fila — copia y pega para agregar más -->
+            <tr>
+              <td contenteditable="true">Nombre del curso</td>
+              <td contenteditable="true">Nombre del profesor(a)</td>
+              <td><a href="https://www.linkedin.com/in/ejemplo" target="_blank" class="link">https://www.linkedin.com/in/ejemplo</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Acerca de mí</h2>
+        <p contenteditable="true">
+          Escribe aquí una descripción más larga sobre ti: tu formación, tus metas profesionales, tus habilidades o proyectos que quieras destacar.
+        </p>
+      </section>
+
+      <footer style="margin-top:24px; display:flex; justify-content:space-between; align-items:center;">
+        <small class="muted">Plantilla personalizada por Nayely MN</small>
+        <small class="muted">&copy; 2025 Nayely MN</small>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
